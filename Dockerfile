@@ -168,8 +168,8 @@ WORKDIR /app
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
-RUN ls
-RUN git clone --branch 0.4 --depth=1  https://github.com/draganshadow/mediamine.git src
+
+RUN git clone --branch 0.4.1 --depth=1  https://github.com/draganshadow/mediamine.git src
 
 WORKDIR /app/src
 
