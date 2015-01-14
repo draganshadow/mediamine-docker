@@ -9,6 +9,12 @@ cp -f /app/config/pgsql/pg_hba.conf /etc/postgresql/9.3/main/pg_hba.conf
 cp -f /app/config/pgsql/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf
 chown -R postgres:postgres /etc/postgresql/9.3/main
 
+mkdir -p /app/src/web/images/resized/library
+mkdir -p /app/src/web/images/resized/template
+mkdir -p /app/src/web/stream
+chmod -R 777 /app/src/web/images
+chmod -R 777 /app/src/web/stream
+mkdir -p /app/db/mongodb
 mkdir -p /app/db/postgresql/main
 chown -R postgres:postgres /app/db/postgresql
 chmod -R 700 /app/db/postgresql
