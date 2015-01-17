@@ -174,6 +174,9 @@ RUN git clone --branch 0.4.3 --depth=1  https://github.com/draganshadow/mediamin
 WORKDIR /app/src
 
 RUN composer install --no-scripts --optimize-autoloader
+RUN (yes | cp -rf vendor/dg/adminer-custom/* web/adminer/ 2>&1) || true
+
+RUN echo 'export TERM=xterm' >> /root/.bashrc
 
 RUN find src -name \.git -type d -exec rm -rf {} \;
 

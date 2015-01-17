@@ -9,5 +9,7 @@ docker run --name mediamine \
     -v /tmp/mediamine/stream:/app/src/web/stream \
     -v /tmp/mediamine/resized:/app/src/web/images/resized \
     -v ~/Vidéos:/app/media/video \
-    -d -p 9999:80 \
-    draganshadow/mediamine
+    -p 9999:80 \
+    -p 15672:15672 \
+    -p 9200:9200 \
+    -d draganshadow/mediamine
