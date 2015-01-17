@@ -192,7 +192,7 @@ ADD scripts/task.sh /etc/service/task/run
 RUN chmod +x /etc/service/task/run
 
 RUN mkdir /etc/service/check_install
-ADD scripts/task.sh /etc/service/check_install/run
+ADD scripts/check_install.sh /etc/service/check_install/run
 RUN chmod +x /etc/service/check_install/run
 
 
