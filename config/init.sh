@@ -10,3 +10,5 @@ php app/console mediamine:oauth:client:create \
     --grant-type="refresh_token" \
     --grant-type="token" \
     --grant-type="client_credentials" > web/client.json
+
+chmod -R 777 /app/src/app/cache/
