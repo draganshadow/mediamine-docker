@@ -30,6 +30,7 @@ sudo -u postgres createdb -O mediamine mediamine
 #chown -R postgres:postgres /app/db/postgresql
 #chmod -R 700 /app/db/postgresql
 
+cp -f /app/config/rabbitmq/rabbitmq-env.config /etc/rabbitmq/rabbitmq-env.config
 cp -f /app/config/rabbitmq/rabbitmq.config /etc/rabbitmq/rabbitmq.config
 
 cp -f /app/config/elasticsearch/elasticsearch.yml /elasticsearch/config/elasticsearch.yml

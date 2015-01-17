@@ -191,6 +191,10 @@ RUN mkdir /etc/service/task
 ADD scripts/task.sh /etc/service/task/run
 RUN chmod +x /etc/service/task/run
 
+RUN mkdir /etc/service/check_install
+ADD scripts/task.sh /etc/service/check_install/run
+RUN chmod +x /etc/service/check_install/run
+
 
 #######################################################################
 #                       POST INSTALL CLEANUP
