@@ -8,6 +8,7 @@ docker run --name mediamine \
     -v /var/log/mediamine:/app/log \
     -v /tmp/mediamine/stream:/app/src/web/stream \
     -v /tmp/mediamine/resized:/app/src/web/images/resized \
+    -v /tmp/mediamine/zip:/app/src/web/zip \
     -v ~/Vidéos:/app/media/video \
     -p 80:80 \
     -p 15672:15672 \
